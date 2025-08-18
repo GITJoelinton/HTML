@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+nav {
+    background-color: #ff6600;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(26, 78, 156);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.categoria {
+    padding: 20px;
+}
+
+.item {
+    margin-bottom: 10px;
+}
