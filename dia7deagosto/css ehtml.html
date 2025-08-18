@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conheça um pouco sobre mim</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        body {
+            position: relative;
+            background-image: url('https://i.pinimg.com/originals/28/85/3c/28853c53c52e10fe7e89d5d7876b68a8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: 1;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        body > * {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu nome é Joelinton Henrique Canesso Siqueira</h1>
+    <p>Nasci em Chapecó - SC e hoje moro em Paraíso - SC.</p>
+    <p>Estou aprendendo programação no SENAC em São Miguel do Oeste com o objetivo de criar os próprios projetos.</p>
+
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Escutar música</li>
+        <li>Estudar tecnologia</li>
+        <li>Jogar video games</li>
+        <li>Assistir TV</li>
+    </ul>
+</body>
+</html>
