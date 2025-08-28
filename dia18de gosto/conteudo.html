@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Posicionamentos CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      height: 200vh; /}
+
+    .box {
+      width: 150px;
+      height: 80px;
+      margin: 15px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    .static {
+      background: gray;
+      position: static;
+    }
+
+    .relative {
+      background: blue;
+      position: relative;
+      top: 20px;
+      left: 30px;
+    }
+
+    .absolute-container {
+      position: relative; 
+      height: 150px;
+      border: 2px dashed #aaa;
+      margin-top: 20px;
+    }
+    .absolute {
+      background: green;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .fixed {
+      background: red;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .sticky {
+      background: purple;
+      position: sticky;
+      top: 0;
+      width:auto;
+      height : 120px;
+    }
+  </style>
+</head>
+<body>
+  <h2>posição do css</h2>
+  <div class="box static">Estatica</div>
+
+  <h2>posição do css: Relativa</h2>
+  <div class="box relative">Relativa</div>
+
+  <h2>posição do css: absoluta</h2>
+  <div class="absolute-container">
+    Container (pai relativo)
+    <div class="box absolute">Absoluta</div>
+  </div>
+
+  <h2>posição do css: fixada</h2>
+  <p>Role a página para ver a caixa vermelha ficar fixa no canto inferior direito.</p>
+  <div class="box fixed">fixada</div>
+
+  <h2>posição do css: sticky ou mistura de relativo mais fixo</h2>
+  <p>Role a página para ver a caixa roxa colar no topo.</p>
+  <div class="box sticky">Sticky ou mistura de relativo com fixo</div>
+</body>
+</html>
