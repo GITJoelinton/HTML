@@ -1,14 +1,82 @@
-body {
-  background-color: #f0f0f0;
-  color: #333111;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
 header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 0;
+    background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.especial {
+    position: relative;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.especial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.especial h2 {
+    position: relative;
+    z-index: 2;
+}
+
+aside {
+    background: linear-gradient(to bottom, #ffeaa7, #fab1a0);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+footer {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
